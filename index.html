@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Personal Page</title>
+<style>
+body {
+  background-color: lightblue;
+  text-align: center;
+  font-family: Arial;
+}
+h1 {
+  color: orange;
+}
+p {
+  color: darkgreen;
+  font-size: 18px;
+}
+.section {
+  background-color: white;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+h2 {
+  color: teal;
+}
+</style>
+</head>
+<body>
+<h1>King Joshua</h1>
+<img src="Snapchat-1867758356~2.jpg" alt="A photo of King Joshua" style="max-width:300px; border-radius:10px;">
+<p id="myText">Hi, I'm King Joshua. I'm learning web development and exploring how to build things with AI. I'm interested in technology, creativity, and learning new things.</p>
+
+<button onclick="changeText()">Change Text</button>
+
+<div class="section">
+  <h2>My Interests</h2>
+  <p>Technology, learning new skills, and building things with AI.</p>
+</div>
+
+<p id="counter">You clicked 0 times</p>
+<button onclick="addClick()">Click Me</button>
+
+<script>
+let count = 0;
+
+function changeText() {
+  document.getElementById("myText").innerHTML = "You clicked the button! JavaScript just changed this text live.";
+}
+
+function addClick() {
+  count = count + 1;
+  if (count >= 10) {
+    document.getElementById("counter").innerHTML = "🎉 You reached " + count + " clicks! You're on fire!";
+  } else {
+    document.getElementById("counter").innerHTML = "You clicked " + count + " times";
+  }
+}
+</script>
+</body>
+  </html>
